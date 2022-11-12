@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.13) # CMAKE (heading)
+include(pico_sdk_import.cmake) # CMAKE -> PICO SDK (include)
+
+project(part2 C CXX ASM) # CMAKE ("project")
+pico_sdk_init() # PICO SDK (initialization)
+
+add_executable(part2) # CMAKE (target)
+
+target_sources(part2 PRIVATE part2.c register.h)
+
+target_link_libraries(part2 PRIVATE pico_stdlib hardware_pio) # CMAKE -> C linker)
+
+pico_enable_stdio_usb(part2 1) # PICO SDK (USB)
+pico_enable_stdio_uart(part2 0) # PICO SDK (USB)
+
+pico_add_extra_outputs(part2) # PICO SDK (UF2)
