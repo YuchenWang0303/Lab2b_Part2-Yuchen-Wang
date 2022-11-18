@@ -4,6 +4,12 @@
 
 ### Teammate: Yuchen Wang, Katrina Ji
 
+University of Pennsylvania, ESE 5190: Intro to Embedded Systems, Lab 2b
+
+    Yuchen Wang
+    wangyuchen0303@gmail.com
+    Tested on: Macbook Pro (14-inch, 2021), macOS Monterey 12.6 
+
 ---
 
 # Screenshot of Boot PIN register Reading:
